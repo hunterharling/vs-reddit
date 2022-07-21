@@ -15,7 +15,12 @@
 	"categories": [
 		"Other"
 	],
-	"keywords": ["Reddit", "vsreddit", "search", "reddit.com"],
+	"keywords": [
+		"Reddit",
+		"vsreddit",
+		"search",
+		"reddit.com"
+	],
 	"activationEvents": [
 		"onCommand:vsreddit.vsreddit"
 	],
@@ -30,7 +35,7 @@
 		"configuration": {
 			"title": "VS Reddit",
 			"properties": {
-				"vsreddit.darkMode":{
+				"vsreddit.darkMode": {
 					"type": "boolean",
 					"default": "false",
 					"description": "Enable dark mode"
