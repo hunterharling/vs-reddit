@@ -53,11 +53,11 @@ function getWebviewContent(context: vscode.ExtensionContext, panel: vscode.Webvi
   );
 
   const scriptUri = panel.webview.asWebviewUri(
-    vscode.Uri.joinPath(context.extensionUri, "out", "compiled/VSreddit.js")
+    vscode.Uri.joinPath(context.extensionUri, "out", "compiled/vsreddit.js")
   );
 
   const styleMainUri = panel.webview.asWebviewUri(
-    vscode.Uri.joinPath(context.extensionUri, "out", "compiled/VSreddit.css")
+    vscode.Uri.joinPath(context.extensionUri, "out", "compiled/vsreddit.css")
   );
 
   // Use a nonce to only allow a specific script to be run.
