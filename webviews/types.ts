@@ -9,5 +9,6 @@ export interface Post {
     selftext_html: string;
     url: string;
     thumbnail: string;
+    id: string;
   };
 };

@@ -31,6 +31,10 @@ In your settings.json, set the darkMode variable:
 
 ## Release Notes
 
+### 1.0.6
+
+Add post ID in render
+
 ### 1.0.5
 
 Fix content width overflow
