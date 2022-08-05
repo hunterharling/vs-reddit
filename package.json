@@ -1,14 +1,14 @@
 {
 	"name": "vsreddit",
 	"displayName": "VS Reddit",
-	"description": "Search Reddit from VSCode",
+	"description": "Search Reddit from VS Code",
 	"publisher": "hunterharling",
 	"repository": {
 		"url": "https://github.com/hunterharling/vs-reddit"
 	},
 	"icon": "media/vsreddit.png",
 	"license": "MIT",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"engines": {
 		"vscode": "^1.52.0"
 	},
