@@ -158,7 +158,7 @@
   </div>
 
   <div class="results">
-    {#each results as post}
+    {#each results as post (post.data.title)}
       <div class="post">
         <div class="subreddit">
           <span>{post.data.subreddit_name_prefixed}</span>
