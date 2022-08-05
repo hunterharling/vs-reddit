@@ -229,6 +229,12 @@ h2 {
   color: var(--light-text);
 }
 
+.preview-content {
+  margin: 10px 0;
+  color: var(--dark-text);
+  max-width: 100%;
+}
+
 .HeaderSeparator:after {
   content: "\2022";
   display: inline-block;
@@ -256,6 +262,12 @@ h2 {
   margin: 8px;
   column-gap: 5px;
   padding: 0 8px;
+}
+
+
+.show-btn {
+  background-color: var(--primary);
+  color: white;
 }
 
 @media screen and (min-width: 650px) {
