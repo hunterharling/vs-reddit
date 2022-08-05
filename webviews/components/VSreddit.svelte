@@ -93,9 +93,10 @@
 
   // Get posts
   const searchReddit = () => {
-    const URL = `https://www.reddit.com/search.json?q=${query
-      .split(" ")
-      .join("%20")}&sort=Relevance&limit=${limit}`;
+    let searchTerm = encodeURIComponent(query)
+      .split(`'`)
+      .join("");
+    const URL = `https://www.reddit.com/search.json?q=${searchTerm}&sort=Relevance&limit=${limit}`;
     fetch(URL)
       .then((res) => res.json())
       .then((data) => {
@@ -105,7 +106,7 @@
           results = relevantResults;
         }
         else {
-          results = timeResults
+          results = timeResults;
         }
       });
   };
@@ -158,7 +159,7 @@
   </div>
 
   <div class="results">
-    {#each results as post (post.data.title)}
+    {#each results as post (post.data.url)}
       <div class="post">
         <div class="subreddit">
           <span>{post.data.subreddit_name_prefixed}</span>
