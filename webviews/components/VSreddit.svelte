@@ -1,16 +1,7 @@
 <script lang="ts">
   import Icon from "./Icon.svelte";
-
-  interface Post {
-    data: {
-      subreddit_name_prefixed: string;
-      created: number;
-      ups: number;
-      num_comments: number;
-      title: string;
-      permalink: string;
-    };
-  };
+  import type { Post } from "../types";
+  import Preview from "./Preview.svelte";
 
   type Posts = Array<Post>;
 
@@ -179,6 +170,7 @@
             {post.data.title}
           </h3>
         </a>
+        <Preview post={post}/>
         <div class="post-bottom">
           <div class="upvotes">
             <svg stroke="currentColor" fill="currentColor" style="font-size: 20px;" stroke-width="0" viewBox="0 0 10 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 3L0 9h3v4h4V9h3L5 3z"></path></svg>
