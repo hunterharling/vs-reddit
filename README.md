@@ -31,6 +31,11 @@ In your settings.json, set the darkMode variable:
 
 ## Release Notes
 
+### 1.0.1
+
+Added post preview
+- Now view images, gifs, links, and text in the posts
+
 ### 1.0.0
 
 Initial release
