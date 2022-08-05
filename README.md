@@ -31,6 +31,10 @@ In your settings.json, set the darkMode variable:
 
 ## Release Notes
 
+### 1.0.5
+
+Fix content width overflow
+
 ### 1.0.4
 
 Fixed Svelte render bug when posts have duplicate titles
